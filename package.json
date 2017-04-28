@@ -1,0 +1,25 @@
+{
+  "name": "rep-connect",
+  "version": "1.0.0",
+  "description": "Connect with your elected officials",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jimleeisme/hrsf75-mvp.git"
+  },
+  "author": "jimleeisme@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jimleeisme/hrsf75-mvp/issues"
+  },
+  "homepage": "https://github.com/jimleeisme/hrsf75-mvp#readme",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2",
+    "mongoose": "^4.9.6"
+  }
+}
