@@ -1,0 +1,1 @@
+window.apiKey = 'PASTE_API_KEY_HERE';
