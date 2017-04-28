@@ -36,3 +36,6 @@ bower_components/
 
 # Google API key
 apiKey.js
+
+# DS_Store
+.DS_Store
