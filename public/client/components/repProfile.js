@@ -2,7 +2,8 @@ angular.module('repConnect')
 .directive('repProfile', function() {
   return {
     scope: {
-      selected: '<'
+      selected: '<',
+      office: '<'
     },
     restrict: 'E',
     controllerAs: 'ctrl',

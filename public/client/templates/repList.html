@@ -1,3 +1,9 @@
 <ul class="rep-list">
-  <rep-list-entry offices="ctrl.offices" ng-repeat="official in ctrl.officials" official="official" index="$index"></rep-list-entry>
+  <rep-list-entry
+    offices="ctrl.offices"
+    ng-repeat="official in ctrl.officials"
+    official="official"
+    index="$index"
+    handle-click="ctrl.handleClick">
+  </rep-list-entry>
 </ul>

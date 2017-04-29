@@ -1,6 +1,7 @@
 <div class="rep-profile">
-  <img src={{ctrl.selected.photoUrl}}>
-  <div>Title</div>
+  <img class="profile" src={{ctrl.selected.photoUrl}}>
+  <div>{{ctrl.office.name}}</div>
   <div>{{ctrl.selected.name}}</div>
-  <div>Contact Info/links</div>
+  <div>{{ctrl.selected.party}}</div>
+  <div ng-repeat="phone in ctrl.selected.phones">{{phone}}</div>
 </div>

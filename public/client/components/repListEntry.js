@@ -4,7 +4,8 @@ angular.module('repConnect')
     scope: {
       offices: '<',
       official: '<',
-      index: '<'
+      index: '<',
+      handleClick: '<'
     },
     restrict: 'E',
     controllerAs: 'ctrl',

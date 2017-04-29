@@ -4,3 +4,9 @@
   object-fit: cover;
   border-radius: 50%;
 }
+
+.profile {
+  width: 27rem;
+  height: 36rem;
+  object-fit: cover;
+}

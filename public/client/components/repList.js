@@ -3,7 +3,8 @@ angular.module('repConnect')
   return {
     scope: {
       offices: '<',
-      officials: '<'
+      officials: '<',
+      handleClick: '<'
     },
     restrict: 'E',
     controllerAs: 'ctrl',
