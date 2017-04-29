@@ -3,7 +3,7 @@
     <img class="thumb" src={{ctrl.official.photoUrl}}>
   </div>
   <div class="media-body">
-    <div>Title</div>
+    <div>{{ctrl.offices[ctrl.index < 3 ? ctrl.index : ctrl.index - 1].name}}</div>
     <div>{{ctrl.official.name}}</div>
   </div>
 </li>

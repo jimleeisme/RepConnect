@@ -5,7 +5,7 @@ angular.module('repConnect')
   this.handleData = function(data) {
     this.offices = data.data.offices;
     this.officials = data.data.officials;
-    // this.currentRep = this.reps[0];
+    this.selected = this.officials[2];
   }.bind(this);
   civicInfo.search('944 Market St, San Francisco', this.handleData);
 })

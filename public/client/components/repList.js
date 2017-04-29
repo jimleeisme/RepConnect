@@ -2,6 +2,7 @@ angular.module('repConnect')
 .directive('repList', function() {
   return {
     scope: {
+      offices: '<',
       officials: '<'
     },
     restrict: 'E',
