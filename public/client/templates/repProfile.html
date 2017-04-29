@@ -1,7 +1,11 @@
-<div class="rep-profile">
-  <img class="profile" src={{ctrl.selected.photoUrl}}>
-  <div>{{ctrl.office.name}}</div>
-  <div>{{ctrl.selected.name}}</div>
-  <div>{{ctrl.selected.party}}</div>
-  <div ng-repeat="phone in ctrl.selected.phones">{{phone}}</div>
+<div class="rep-profile media col-md-8">
+  <div class="media-left">
+    <img class="profile" src={{ctrl.selected.photoUrl}}>
+  </div>
+  <div class="media-body">
+    <div>{{ctrl.office.name}}</div>
+    <div>{{ctrl.selected.name}}</div>
+    <div>{{ctrl.selected.party}}</div>
+    <div ng-repeat="phone in ctrl.selected.phones">{{phone}}</div>
+  </div>
 </div>

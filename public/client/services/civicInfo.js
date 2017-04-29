@@ -11,5 +11,12 @@ angular.module('repConnect')
     .catch(function(err) {
       console.error(err);
     });
+    // send address to server to save to db
+    $http.post('/address', {
+      data: { address: addr }
+    })
+    .catch(function(err) {
+      console.error(err);
+    });
   };
 });
