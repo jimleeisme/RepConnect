@@ -10,6 +10,6 @@ angular.module('repConnect')
     })
     .catch(function(err) {
       console.error(err);
-    })
-  }
-})
+    });
+  };
+});
