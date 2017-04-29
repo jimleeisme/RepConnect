@@ -2,8 +2,10 @@ angular.module('repConnect')
 .controller('AppCtrl', function(civicInfo) {
   // this.reps = null;
   // this.currentRep = null;
+  this.searcher = civicInfo;
   this.handleData = function(data) {
-    this.reps = data;
+    this.reps = data.data;
+    console.log(data.data);
     // this.currentRep = this.reps[0];
   };
 })

@@ -4,7 +4,6 @@ angular.module('repConnect')
     scope: {},
     restrict: 'E',
     controllerAs: 'ctrl',
-    // bindToController: true,
     templateUrl: 'client/templates/repList.html'
   };
 });
