@@ -1,13 +1,13 @@
 angular.module('repConnect')
 .controller('AppCtrl', function(civicInfo) {
-  // this.reps = null;
-  // this.currentRep = null;
-  this.searcher = civicInfo;
+
+  this.civicInfo = civicInfo;
   this.handleData = function(data) {
-    this.reps = data.data;
-    console.log(data.data);
+    this.offices = data.data.offices;
+    this.officials = data.data.officials;
     // this.currentRep = this.reps[0];
-  };
+  }.bind(this);
+  civicInfo.search('944 Market St, San Francisco', this.handleData);
 })
 .directive('app', function() {
   return {

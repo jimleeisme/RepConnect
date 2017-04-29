@@ -1,15 +1,14 @@
 angular.module('repConnect')
 .controller('SearchController', function() {
   this.getData = function() {
-    console.log('clicked')
-    this.search.search(this.input, this.handle);
+    this.civicInfo.search(this.input, this.handleData);
   };
 })
 .directive('search', function() {
   return {
     scope: {
-      search: '<',
-      handle: '<'
+      civicInfo: '<',
+      handleData: '<'
     },
     restrict: 'E',
     controller: 'SearchController',

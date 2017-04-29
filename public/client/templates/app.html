@@ -1,4 +1,4 @@
-<div id="app container">
+<div id="app container" ng-controller="AppCtrl">
   <div>
     <h1>RepConnect</h1>
   </div>
@@ -7,7 +7,7 @@
       <user></user>
     </div>
     <div class="col-md-6">
-      <search search="ctrl.searcher" handle="ctrl.handleData"></search>
+      <search civic-info="ctrl.civicInfo" handle-data="ctrl.handleData"></search>
     </div>
   </nav>
   <div class="row">
@@ -15,7 +15,7 @@
       <rep-profile></rep-profile>
     </div>
     <div class="col-md-6">
-      <rep-list></rep-list>
+      <rep-list officials="ctrl.officials"></rep-list>
     </div>
   </div>
 </div>
