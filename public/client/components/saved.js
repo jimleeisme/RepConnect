@@ -1,11 +1,16 @@
 angular.module('repConnect')
 .controller('SavedController', function() {
   this.model = null;
+  this.getData = function() {
+    this.civicInfo.search(this.model, this.handleData);
+  }
 })
 .directive('saved', function() {
   return {
     scope: {
-      locations: '<'
+      locations: '<',
+      civicInfo: '<',
+      handleData: '<'
     },
     restrict: 'E',
     controller: 'SavedController',
