@@ -1,0 +1,8 @@
+<div class="saved">
+  <form>
+    <label for="locationSelect"> Saved Locations: </label>
+    <select name="locationSelect" id="locationSelect" ng-model="ctrl.model">
+      <option ng-repeat="location in ctrl.locations" value="location">{{location}}</option>
+    </select>
+  </form>
+</div>

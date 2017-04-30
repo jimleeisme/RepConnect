@@ -3,12 +3,17 @@ angular.module('repConnect')
   this.getData = function() {
     this.civicInfo.search(this.input, this.handleData);
   };
+  this.getLocs = function() {
+    this.savedLocs.get(this.handleLocs);
+  };
 })
 .directive('search', function() {
   return {
     scope: {
       civicInfo: '<',
-      handleData: '<'
+      handleData: '<',
+      savedLocs: '<',
+      handleLocs: '<'
     },
     restrict: 'E',
     controller: 'SearchController',

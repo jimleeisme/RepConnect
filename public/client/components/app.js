@@ -1,6 +1,7 @@
 angular.module('repConnect')
-.controller('AppCtrl', function(civicInfo) {
+.controller('AppCtrl', function(civicInfo, savedLocs) {
   this.civicInfo = civicInfo;
+  this.savedLocs = savedLocs;
   this.handleData = function(data) {
     this.offices = data.data.offices;
     this.officials = data.data.officials;
@@ -11,6 +12,10 @@ angular.module('repConnect')
     this.selected = official;
     this.selectedOffice = this.offices[position];
   }.bind(this);
+  this.handleLocs = function(data) {
+    this.locations = data;
+  }
+  savedLocs.get(this.handleLocs);
   civicInfo.search('944 Market St, San Francisco', this.handleData);
 })
 .directive('app', function() {
