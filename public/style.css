@@ -10,3 +10,8 @@
   height: 36rem;
   object-fit: cover;
 }
+
+.rep-list, #app {
+  height: 80vh;
+  overflow-y: scroll;
+}
