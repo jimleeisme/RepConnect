@@ -15,7 +15,7 @@ app.get('/', function(req, res) {
 app.post('/address', function(req, res) {
   var newAddr = new Address({ address: req.body.data.address });
   newAddr.save(function(err) {
-    // if (err) res.status(500).send(err.message);
+    if (err) console.error(err.message);
     res.status(200).send(newAddr);
   });
 });
