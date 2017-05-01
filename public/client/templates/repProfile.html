@@ -6,7 +6,11 @@
     <div>{{ctrl.office.name}}</div>
     <div>{{ctrl.selected.name}}</div>
     <div>{{ctrl.selected.party}}</div>
-    <div ng-repeat="phone in ctrl.selected.phones">{{phone}}</div>
-    <div ng-repeat="email in ctrl.selected.emails">{{email}}</div>
+    <div ng-repeat="phone in ctrl.selected.phones">
+      <a href="tel:{{'+1-' + phone.slice(1, 4) + '-' + phone.slice(6)}}">{{phone}}</a>
+    </div>
+    <div ng-repeat="email in ctrl.selected.emails">
+      <a href="mailto:{{email}}" target="_blank">{{email}}</a>
+    </div>
   </div>
 </div>

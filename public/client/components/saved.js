@@ -3,7 +3,7 @@ angular.module('repConnect')
   this.model = null;
   this.getData = function() {
     this.civicInfo.search(this.model, this.handleData);
-  }
+  };
 })
 .directive('saved', function() {
   return {
